@@ -1,4 +1,4 @@
-import { Select } from "antd";
+import Select from "@mui/material/Select";
 
 const { Option } = Select;
 

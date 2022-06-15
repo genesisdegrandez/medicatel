@@ -1,7 +1,7 @@
-import TextField from '@material-ui/core/TextField';
+import TextField from "@mui/material/TextField";
 
 const TextFields = ({ children, ...rest }) => {
-    return <TextField {...rest}>{children}</TextField>;
-  };
-  
-  export default TextFields;
+  return <TextField {...rest}>{children}</TextField>;
+};
+
+export default TextFields;
