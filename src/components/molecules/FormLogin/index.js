@@ -14,8 +14,11 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
+import { useHistory } from "react-router-dom";
 
 const FormLogin = () => {
+  const history = useHistory();
+
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -23,9 +26,10 @@ const FormLogin = () => {
     setShowPassword(!showPassword);
   };
 
-  // const handleClick = () => {
-  //   navigate("../../../pages/Empresa");
-  // };
+  const handleClick = () => {
+    history.push("/Empresa");
+    console.log("Me distes click");
+  };
   return (
     <Container>
       <FormControl fullWidth sx={{ m: 1 }}>
@@ -61,7 +65,9 @@ const FormLogin = () => {
 
       <label>¿Olvidastes tu contraseña?</label>
       <FormControl variant="outlined" fullWidth sx={{ m: 1 }}>
-        <Button variant="contained">Ingresar</Button>
+        <Button variant="contained" onClick={handleClick}>
+          Ingresar
+        </Button>
       </FormControl>
 
       <label>¿No tienes una cuenta? Registrate</label>

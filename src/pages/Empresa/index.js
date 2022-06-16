@@ -1,7 +1,12 @@
 import React from "react";
+import { Sidebar } from "../../components/organisms";
 
 const Empresa = () => {
-  return <div>Empresa</div>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
 };
 
 export default Empresa;

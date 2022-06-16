@@ -1,4 +1,5 @@
 export { default as Button } from "./Button";
+export { default as Box } from "./Box";
 export { default as Container } from "./Container";
 export { default as FormControl } from "./FormControl";
 export { default as Grid } from "./Grid";
